@@ -1,0 +1,19 @@
+{
+  "name": "chain-management",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "chain-management/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/chain-management",
+        "main": "chain-management/src/index.ts",
+        "tsConfig": "chain-management/tsconfig.lib.json",
+        "assets": ["chain-management/*.md"]
+      }
+    }
+  }
+}
